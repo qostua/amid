@@ -1,4 +1,11 @@
 @import "mixins";
 @import "variables";
 
-@include font-face("Roboto-Light", "Roboto-Light", 400);
+@include font-face("Roboto", "Roboto-Bold", 700);
+@include font-face("Roboto", "Roboto-Mediun", 500);
+@include font-face("Roboto", "Roboto-Regular", 400);
+@include font-face("Poppins", "Poppins-Bold", 700);
+
+body {
+  @include roboto(400);
+}

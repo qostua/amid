@@ -5,12 +5,12 @@
 @mixin no-mark {
   list-style: none;
 }
-@mixin title-font {
-  font-family: "", "Georgia", serif;
+@mixin roboto($weight) {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: $weight;
 }
-@mixin text-font {
-  font-family: "", "Arial", sans-serif;
-  font-weight: bold;
+@mixin title-font {
+  font-family: "Poppins", "Arial", sans-serif;
 }
 @mixin font($size, $height: $size) {
   font-size: $size;
