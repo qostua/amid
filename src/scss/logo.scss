@@ -1,0 +1,19 @@
+@import "mixins";
+@import "variables";
+
+.logo {
+  position: relative;
+
+  padding-left: 28px;
+
+  color: #124F48;
+
+  @include font(36px, 42px);
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: url('../img/logo.svg');
+  }
+}
