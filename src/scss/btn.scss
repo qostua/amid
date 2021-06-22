@@ -1,0 +1,19 @@
+@import "mixins";
+@import "variables";
+
+.btn {
+  display: inline-block;
+
+  padding: 18px 39px;
+
+  color: white;
+  border-radius: 100px;
+  background: $orange;
+
+  font-weight: 700;
+
+  @include font(18px, 21px);
+}
+.btn-green {
+  background: $green;
+}
