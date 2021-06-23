@@ -11,6 +11,7 @@
 }
 @mixin title-font {
   font-family: "Poppins", "Arial", sans-serif;
+  font-weight: bold;
 }
 @mixin font($size, $height: $size) {
   font-size: $size;
@@ -26,4 +27,12 @@
 		url('../#{$url}.woff') format('woff');
 		font-display: swap;
 	}
+}
+@mixin active {
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
