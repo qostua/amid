@@ -1,0 +1,24 @@
+@import "mixins";
+@import "variables";
+
+.partners {
+
+}
+.partners__list {
+  display: grid;
+
+  grid-template-columns: repeat(4, 255px);
+  gap: 30px;
+}
+.partners__item {
+  display: flex;
+
+  width: 255px;
+  height: 103px;
+
+  border-radius: 10px;
+  background-color: #F1FAF9;
+
+  justify-content: center;
+  align-items: center;
+}
