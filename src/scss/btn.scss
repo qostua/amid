@@ -1,10 +1,22 @@
 @import "mixins";
 @import "variables";
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+    transform-origin: 19.5px 19.5px;
+  }
+  to {
+  transform: rotate(360deg);
+  transform-origin: 19.5px 19.5px;
+  }
+}
 .btn {
   display: inline-block;
 
   padding: 18px 39px;
+
+  letter-spacing: 0.9px;
 
   color: white;
   border-radius: 100px;
@@ -13,7 +25,37 @@
   font-weight: 700;
 
   @include font(18px, 21px);
+  @include active;
 }
 .btn-green {
   background: $green;
+}
+.btn--video {
+  position: relative;
+
+  padding-left: 53px;
+
+  text-transform: uppercase;
+
+  color: $orange;
+  background-color: transparent;
+
+  &:hover {
+    opacity: 1;
+    color: rgba(255, 130, 59, 0.6)
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.btn--video:hover .btn__play-icon-pause {
+  animation-name: rotate;
+  animation-duration: 1s;
+}
+.btn__play-icon {
+  position: absolute;
+  top: 10px;
+  left: -2px;
+
+  filter: drop-shadow(0px 0px 24px #D6E2E1);
 }
