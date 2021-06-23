@@ -2,7 +2,11 @@
 @import "variables";
 
 .container {
+  box-sizing: border-box;
   width: 1110px;
   margin-right: auto;
   margin-left: auto;
+}
+.container--wide {
+  width: 1320px;
 }
