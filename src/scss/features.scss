@@ -1,0 +1,26 @@
+@import "mixins";
+@import "variables";
+
+.features-list {
+  position: absolute;
+  z-index: 1;
+  right: 310px;
+  bottom: -80px;
+
+  display: grid;
+
+  width: 314px;
+  height: 314px;
+
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 3px 84px rgba(142, 199, 192, 0.3);
+
+  grid-template-columns: 104px 104px;
+  gap: 18px 31px;
+  justify-content: center;
+  align-items: flex-end;
+}
+.features-item:nth-child(3), .features-item:nth-child(4) {
+  align-self: flex-start;
+}
