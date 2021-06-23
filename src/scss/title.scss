@@ -1,0 +1,11 @@
+@import "mixins";
+@import "variables";
+
+.title {
+  @include title-font;
+  @include font(44px, 80px);
+}
+
+.title--main {
+  font-size: 64px;
+}

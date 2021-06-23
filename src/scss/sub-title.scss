@@ -1,0 +1,16 @@
+@import "mixins";
+@import "variables";
+
+.sub-title {
+  display: inline-block;
+
+  padding: 4px 22px;
+
+  letter-spacing: 1.6px;
+
+  color: $orange-text;
+  border-radius: 4px;
+  background-color: white;
+
+  @include font(16px, 30px);
+}
