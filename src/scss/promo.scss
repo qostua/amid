@@ -4,7 +4,7 @@
 .promo {
   position: relative;
 
-  padding: 70px 124px 107px;
+  padding: 70px 124px 105px;
 
   border-radius: 30px;
   background-color: $green-light;
@@ -14,18 +14,20 @@
   background-size: 413px;
   &::before {
     position: absolute;
-    right: -61px;
+    right: 0;
     bottom: -3px;
 
     display: block;
 
-    width: 838px;
+    width: 778px;
     height: 673px;
 
     content: "";
 
     background-image: url("../img/promo-girl@1x.png");
     background-size: 838px 673px;
+
+    object-fit: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/promo-girl@2x.png");
