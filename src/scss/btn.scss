@@ -59,3 +59,18 @@
 
   filter: drop-shadow(0px 0px 24px #D6E2E1);
 }
+.btn--more {
+  position: relative;
+
+  padding-right: 63px;
+
+  color: #124F48;
+  background-color: transparent;
+  &::after {
+    position: absolute;
+    top: 20px;
+    right: 34px;
+
+    content: url("../img/arrow-btn.svg")
+  }
+}
