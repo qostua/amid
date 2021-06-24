@@ -71,6 +71,21 @@
     top: 20px;
     right: 34px;
 
-    content: url("../img/arrow-btn.svg")
+    content: url("../img/arrow-btn.svg");
+  }
+}
+.btn--more-orange {
+  position: relative;
+
+  padding-right: 63px;
+
+  &::after {
+    position: absolute;
+    top: 20px;
+    right: 34px;
+
+    content: url("../img/arrow-btn.svg");
+
+    filter: brightness(0) invert(1);
   }
 }
