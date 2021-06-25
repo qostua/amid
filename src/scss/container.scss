@@ -10,3 +10,15 @@
 .container--wide {
   max-width: 1320px;
 }
+.container--footer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.container--footer-row {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
