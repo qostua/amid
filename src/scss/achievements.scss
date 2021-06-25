@@ -5,7 +5,7 @@
   display: grid;
 
   grid-template-columns: 540px 510px;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: repeat(auto);
   gap: 85px 56px;
   grid-template-areas:
     "title features"
@@ -94,7 +94,4 @@
   color: #464646;
 
   @include font(18px, 36px);
-}
-.achievements__btn {
-
 }
