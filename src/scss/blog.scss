@@ -59,16 +59,42 @@
   grid-gap: 50px;
 }
 .blog__articles-item {
+  position: relative;
+
   padding: 20px 13px;
 
   border-radius: 10px;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    box-sizing: border-box;
+    width: 75px;
+    height: 75px;
+    padding: 7px 16px;
+
+    content: "";
+
+    color: white;
+    border-radius: 10px;
+    background-color: $green;
+
+    font-weight: 700;
+
+    @include font(24px, 30px);
+  }
 
   &:hover {
     box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
   }
+}
+.blog__articles-item--upgrowing::after {
+  content: "22 Dec"
+}
+.blog__articles-item--team::after {
+  content: "16 Dec"
 }
 .blog__articles-item:hover .btn--more {
   padding-left: 39px;

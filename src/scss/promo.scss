@@ -24,13 +24,13 @@
 
     content: "";
 
-    background-image: url("../img/promo-girl@1x.png");
+    background-image: url("../img/css-promo-girl@1x.png");
     background-size: 838px 673px;
 
     object-fit: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/promo-girl@2x.png");
+      background-image: url("../img/css-promo-girl@2x.png");
     }
   }
   &::after {
