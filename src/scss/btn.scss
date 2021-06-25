@@ -7,8 +7,8 @@
     transform-origin: 19.5px 19.5px;
   }
   to {
-  transform: rotate(360deg);
-  transform-origin: 19.5px 19.5px;
+    transform: rotate(360deg);
+    transform-origin: 19.5px 19.5px;
   }
 }
 .btn {
@@ -63,6 +63,7 @@
   position: relative;
 
   padding-right: 63px;
+  padding-left: 0;
 
   color: #124F48;
   background-color: transparent;
